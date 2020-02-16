@@ -3,13 +3,13 @@ import Aux from "../../HOC/Aux";
 
 import classes from "./Layout.module.css";
 
-function Layout(props) {
+const Layout = props => {
   return (
     <Aux>
       <div>Toolbar, SideDrawer,BackDrop</div>
       <main className={classes.Content}>{props.children}</main>
     </Aux>
   );
-}
+};
 
 export default Layout;
